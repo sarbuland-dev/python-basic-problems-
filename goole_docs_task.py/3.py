@@ -1,12 +1,15 @@
 def access(user):
+    user= user.lower()
     match user:
-        case "Admin"|"Manager":
-        # case _ if   "Admin"   in user or "Manager" in user:
-            return("Full Access!")
-        case _ if  "Guest" in user:
+        case "admin"|"manager":
+          return("Full Access!")
+        case   "guest" :
             return("Limited Access!")
         case _:
             return("No Access!")
 
-n=input("Enter your post ").capitalize().strip()
-print(access(n))
+
+print(access("manager"))
+print(access("ADMIN"))
+print(access("GUEST"))
+print(access("cleaner"))

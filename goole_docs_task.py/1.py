@@ -17,9 +17,11 @@ def weekday(n):
         return("Today is Sunday! ")
      case _:
         return("Please! Enter a valid day number ")
+       
 
-while True:        
-  day=int(input("Enter your number to find day (1 to 7)  ").strip())
-  print(weekday(day))
+print(weekday(1))
+print(weekday(5))
+print(weekday(7))
+print(weekday(10))
         
     

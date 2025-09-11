@@ -1,20 +1,34 @@
-def greeting(details):
-    
-    l=len(details)
-    match details:
-        case _ if details[0] == ("Morning" or "Evening"or "Night"):
-                match l:
-                 case _ if l<=2:
-                   return(f"good {details[0]} {details[1]}")
-                 case _ if l>2:
-                   for i in range(1,len(details)):
-                    print (f"good {details[0]} {details[i]}")
-        case _:
-            return("somthing went wrong!")
+# def greeting(details):
+#     match details:
+#         case [time, name]:
+#             return f"Good {time} {name}"
+#         case [time, *names] if len(names) > 1:
+#           for i in names:
+#             print  (f"Good {time} {i}!")                     
+#         case _:
+#             return "Something went wrong"
 
-            
-               
-            
-    
-lst=list((input("enter your time and name (plz first enter time then name  )  "  ).capitalize().strip()))
-print(greeting(lst))
+
+
+# print(greeting(["Morning", "ali khan"]))
+# print(greeting(["Afternoon", "sara"]))
+# print(greeting(["Evening", "hassan", "bilal", "ahmad"]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+def my_func():
+    x = 10  # local variable
+    print("Inside function:", x)
+
+my_func()
+print(x)  #  Error: x is not defined
