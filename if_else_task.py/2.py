@@ -21,7 +21,7 @@ if month>=1 and month<=12:
     elif month==4:
         print("April has 30 days ")
     elif month==5:
-        print("May has 31 days ")
+        print("May has 31 days ") 
     elif month==6:
         print("June has 30 days ")
     elif month==7:
