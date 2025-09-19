@@ -16,3 +16,14 @@ if n>=0 and n<=100:
         print("F")
 else:
     print("Invalid Marks!")
+
+x = [1, 2, 3]
+y = x
+y.append(4)
+
+print("x =", x)
+print("y =", y)
+print(x is y)
+
+
+
