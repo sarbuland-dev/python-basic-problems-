@@ -8,4 +8,5 @@ for i in lst:
     else:
         x.remove(i)
 print(x)
-    
+
+
